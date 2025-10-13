@@ -1,0 +1,784 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  font-weight: 400;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.kepala {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 758px;
+  box-sizing: border-box;
+  background-image: url("Asset/Sea_Ocean_Wave.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Navigasi {
+  margin: 1rem 0;
+  padding: 5px 1%;
+  background: linear-gradient(360deg, transparent 10%, #fff 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+}
+
+.Navigasi .navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Navigasi .navbar .menu li {
+  margin: 0 1em;
+  line-height: 28px;
+  box-sizing: border-box;
+}
+
+.Navigasi .navbar .menu li a {
+  text-decoration: none;
+  color: dimgray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Navigasi .navbar .menu li a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+  text-shadow: 0 0 30px royalblue;
+}
+
+.Nama-Hero {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.kadita {
+  margin: 20px auto -20px auto;
+  width: 1150px;
+  height: 680px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(55%, -103%);
+  z-index: 2;
+}
+
+.conten-header {
+  width: 1350px;
+  background: linear-gradient(360deg, orchid 10%, transparent 100%);
+  height: 1200vmax;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 3% 4%;
+  box-shadow: 0 16px 52px rgba(0, 0, 0, 0.55);
+}
+
+.conten-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.object {
+  padding: 0 3%;
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+
+.pembungkus {
+  width: 500px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 1%;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%, 65%);
+  /* background: linear-gradient(360deg, orchid 10%, transparent 100%); */
+  z-index: 3;
+}
+
+.paragraph {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  word-spacing: 10px;
+  background: linear-gradient(360deg, orchid 10%, transparent 100%);
+}
+
+.hero {
+  font-size: 25rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 8rem;
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* MAin Section */
+
+.container {
+  padding: 5%;
+  box-sizing: border-box;
+  background-color: #212121;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 150vmax;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.container::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #212121 0%,
+    #18171799 40%,
+    #00000000 100%
+  );
+}
+
+.container::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #212121 0%,
+    #18171799 40%,
+    #00000000 100%
+  );
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto 10px auto;
+  /* border: 5px solid red; */
+  box-sizing: border-box;
+}
+
+.infinity {
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  animation: spin 30s linear infinite;
+  padding-right: 1em;
+}
+
+/* Pause all rows when hovering anywhere in the gallery (including images) */
+.galery:hover .infinity {
+  animation-play-state: paused !important;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 10px));
+  }
+}
+
+.bungkusan {
+  box-sizing: border-box;
+  padding: 3rem;
+  border: transparent solid 3px;
+  background-color: #212121;
+  margin: 1rem;
+}
+
+.judul {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Skin Create */
+
+.create {
+  flex: 0 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+}
+
+.epic {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -5);
+}
+
+/* Skin MPL */
+
+.turnament {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.mpl {
+  flex: 0 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  animation-delay: calc(30s / 8 * (8 - 1) * -4);
+}
+
+/* skin Starlight */
+
+.star {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  flex: 0 0 auto;
+  animation-delay: calc(30s / 8 * (8 - 1) * -6);
+}
+
+.starlight {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Skin Spesial */
+
+.special {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  flex: 0 0 auto;
+  animation-delay: calc(30s / 8 * (8 - 1) * -3);
+}
+
+.spesial {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Skin Basic */
+
+.basic {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  flex: 0 0 auto;
+  animation-delay: calc(30s / 8 * (8 - 1) * -2);
+}
+
+.normal {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Skin Bawaan */
+
+.pabrik {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  flex: 0 0 auto;
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.default {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* galeri 2 */
+
+.galeri {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto 2rem auto;
+  box-sizing: border-box;
+  /* border: 5px solid red; */
+}
+
+.infiniti {
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  animation: scrolling 30s linear infinite reverse;
+  padding-right: 1em;
+}
+
+.galeri:hover .infiniti {
+  animation-play-state: paused !important;
+  cursor: pointer;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 10px));
+  }
+}
+
+/* Fanart Create */
+
+.artfan {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.fanart {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Fanart Starlight */
+
+.art {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -2);
+}
+
+.gambar {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Fanart Sailor Moon */
+
+.moon {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -3);
+}
+
+.sailor {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Starlight Skin */
+
+.flower {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -4);
+}
+
+.bunga {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Old Anthem Of Tides */
+
+.spear {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -5);
+}
+
+.tidal {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* New Anthem Of Tides */
+
+.tombak {
+  flex: 0 0 auto;
+  margin: 20px 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  animation-delay: calc(30s / 8 * (8 - 1) * -6);
+}
+
+.stick {
+  width: 450px;
+  height: 30vh;
+  border-radius: 12px;
+}
+
+/* Personagent */
+
+.relasi {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 3rem 10px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.dibungkus {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.network {
+  padding: 3rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  border: transparent solid 3px;
+  background-color: #212121;
+}
+
+.networking {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box
+}
+
+.Tim {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 2rem auto 10px auto;
+  padding: 3rem;
+}
+
+.Rekan {
+  margin: 20px 3rem;
+  box-sizing: border-box;
+  width: 450px;
+  height: 530px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #fff solid;
+}
+
+.rekanku {
+  width: 445px;
+  height: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.Leader {
+  margin: 20px 3rem;
+  box-sizing: border-box;
+  width: 450px;
+  height: 530px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #fff solid;
+}
+
+.diriku {
+  width: 445px;
+  height: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.packaging {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #212121;
+}
+
+.chara {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.keterangan {
+  font-size: 18px;
+  color: #fff; 
+  font-weight: 400;
+  word-spacing: 1px;
+  text-align: center;
+  margin: 5px 0; 
+}
+
+.footing {
+  background-color: #1d2025;
+  color: #fff;
+  box-sizing: border-box;
+  height: 250px;
+  padding: 1% 3%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 40px;
+  box-sizing: border-box;
+  border-bottom: #393E46 solid 4px;
+  justify-content: space-evenly;
+}
+
+.footing-judul {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 10px;
+  color: beige;
+}
+
+.footing-menu{
+  margin: auto;
+}
+
+.footing-menu ol{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: 30px;
+  padding: 30px;
+}
+
+.footing-menu ol a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* penutup */
+
+.lisensi {
+  margin: 10px 0;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+
+.terbit {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-indent: 2rem;
+}
