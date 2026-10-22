@@ -1,122 +1,41 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
   border-collapse: collapse;
@@ -133,16 +52,10 @@ body {
 
 .kepala {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 758px;
-  box-sizing: border-box;
-  background-image: url("Asset/Sea_Ocean_Wave.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(450deg, #6a3093 0%, #a044ff 20%, #e94057 45%, #f27121 75%, #fbb034 100%);
+  min-width: 100vw;
 }
 
 .Navigasi {
@@ -157,6 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 3px solid #fff;
+  box-shadow: 2px 1px 0 #000;
 }
 
 .Navigasi .navbar .menu {
@@ -166,9 +80,10 @@ body {
 }
 
 .Navigasi .navbar .menu li {
-  margin: 0 1em;
+  margin: 0 2em;
   line-height: 28px;
   box-sizing: border-box;
+  padding: 4px 2px;
 }
 
 .Navigasi .navbar .menu li a {
@@ -176,12 +91,71 @@ body {
   color: dimgray;
   font-weight: bold;
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .Navigasi .navbar .menu li a:hover {
-  color: dodgerblue;
+  color: #ff2c2c;
   text-decoration: underline;
-  text-shadow: 0 0 30px royalblue;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.lapor {
+  /* color: #dc46dc !important; */
+  color: #9d00ff !important;
+  text-shadow: 1px 1px 0 #fff !important;
+}
+
+.Navigasi .navbar .menu li .lapor:hover {
+  color: #0bda51 !important;
+  text-shadow: 1px 1px 0 #fff !important;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #1d2025;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(1) {
+  transform-origin: center;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: center;
+}
+
+.menu-toggle span:nth-child(3) {
+  transform-origin: center;
+}
+
+/* Hamburger animation when active */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .Nama-Hero {
@@ -190,24 +164,44 @@ body {
   font-weight: bold;
   box-sizing: border-box;
   margin: 0 10px;
+  padding: 3px;
+  text-shadow: #000 2px 2px 0;
+  text-transform: capitalize;
 }
 
 .kadita {
   margin: 20px auto -20px auto;
-  width: 1150px;
-  height: 680px;
+  /* max-width: 1150px; */
+  max-width: 95vw;
+  /* min-height: 680px; */
+  min-height: 115vh;
   box-sizing: border-box;
   position: absolute;
   right: 50%;
   top: 50%;
-  transform: translate(55%, -103%);
+  transform: translate(80%, -103%);
   z-index: 2;
 }
 
+.content-pertama {
+  width: 100vw;
+  height: 130vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background-image: url("Asset/Sea_Ocean_Wave.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .conten-header {
-  width: 1350px;
+  width: 100vw;
   background: linear-gradient(360deg, orchid 10%, transparent 100%);
-  height: 1200vmax;
+  height: 80vmax;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -243,38 +237,45 @@ body {
 }
 
 .pembungkus {
-  width: 500px;
+  width: 550px;
+  height: 270px;
   box-sizing: border-box;
   display: flex;
   padding: 1%;
   top: 50%;
   left: 50%;
-  transform: translate(5%, 65%);
-  /* background: linear-gradient(360deg, orchid 10%, transparent 100%); */
+  transform: translate(5%, 85%);
+  background: linear-gradient(360deg, orchid 10%, transparent 100%);
   z-index: 3;
 }
 
 .paragraph {
   font-size: 18px;
-  text-align: center;
+  padding: 3% 2.5%;
+  text-align: start;
   color: #fff;
   line-height: 30px;
   word-spacing: 10px;
-  background: linear-gradient(360deg, orchid 10%, transparent 100%);
+  text-shadow: #000 2px 2px 0;
+  /* background: linear-gradient(360deg, orchid 10%, transparent 100%); */
 }
 
 .hero {
-  font-size: 25rem;
+  display: flex;
+  font-size: 20rem;
   font-weight: bold;
   color: #fff;
-  line-height: 8rem;
+  line-height: 9rem;
   position: absolute;
   justify-content: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -150%);
+  transform: translate(-48%, -130%);
   box-sizing: border-box;
+  letter-spacing: 2rem;
   z-index: 2;
+  text-shadow: #000 2px 2px 0;
+  text-transform: capitalize;
 }
 
 /* MAin Section */
@@ -284,10 +285,10 @@ body {
   box-sizing: border-box;
   background-color: #212121;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   position: relative;
   overflow: hidden;
-  height: 150vmax;
+  height: 300vh;
 }
 
 .container::before,
@@ -366,7 +367,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 10px));
+    transform: translateX(calc(-90% - 20px));
   }
 }
 
@@ -383,7 +384,13 @@ body {
   color: #fff;
   font-weight: bold;
   box-sizing: border-box;
+  text-transform: capitalize;
+  text-align: center;
 }
+
+/* pembungkus */
+
+
 
 /* Skin Create */
 
@@ -395,8 +402,8 @@ body {
 }
 
 .epic {
-  width: 450px;
-  height: 30vh;
+  min-width: 450px;
+  max-height: 30vh;
   border-radius: 12px;
   box-sizing: border-box;
   animation-delay: calc(30s / 8 * (8 - 1) * -5);
@@ -405,8 +412,8 @@ body {
 /* Skin MPL */
 
 .turnament {
-  width: 450px;
-  height: 30vh;
+  min-width: 450px;
+  max-height: 30vh;
   border-radius: 12px;
   box-sizing: border-box;
 }
@@ -430,8 +437,24 @@ body {
 }
 
 .starlight {
-  width: 450px;
-  height: 30vh;
+  min-width: 450px;
+  max-height: 30vh;
+  border-radius: 12px;
+}
+
+/* skin Epic */
+
+.bajak-laut {
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  flex: 0 0 auto;
+  animation-delay: calc(30s / 8 * (8 - 1) * -7);
+}
+
+.pirate {
+  min-width: 450px;
+  max-height: 30vh;
   border-radius: 12px;
 }
 
@@ -446,8 +469,8 @@ body {
 }
 
 .spesial {
-  width: 450px;
-  height: 30vh;
+  min-width: 450px;
+  max-height: 30vh;
   border-radius: 12px;
   box-sizing: border-box;
 }
@@ -489,7 +512,7 @@ body {
 .galeri {
   display: flex;
   flex-direction: row;
-  margin: 10px auto 2rem auto;
+  margin: 10px auto 1rem auto;
   box-sizing: border-box;
   /* border: 5px solid red; */
 }
@@ -514,7 +537,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 10px));
+    transform: translateX(calc(-90% - 10px));
   }
 }
 
@@ -623,7 +646,7 @@ body {
   justify-content: center;
   align-items: center;
   width: auto;
-  margin: 3rem 10px;
+  margin: 1vh 10px;
   padding: 2rem 1rem;
   box-sizing: border-box;
 }
@@ -649,14 +672,16 @@ body {
   font-size: 4rem;
   color: #fff;
   font-weight: bold;
-  box-sizing: border-box
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .Tim {
   box-sizing: border-box;
   display: flex;
   flex-direction: row-reverse;
-  margin: 2rem auto 10px auto;
+  margin: 0.5rem auto 10px auto;
   padding: 3rem;
 }
 
@@ -664,7 +689,7 @@ body {
   margin: 20px 3rem;
   box-sizing: border-box;
   width: 450px;
-  height: 530px;
+  min-height: 35rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -682,7 +707,7 @@ body {
   margin: 20px 3rem;
   box-sizing: border-box;
   width: 450px;
-  height: 530px;
+  min-height: 35rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -717,19 +742,20 @@ body {
 
 .keterangan {
   font-size: 18px;
-  color: #fff; 
+  color: #fff;
   font-weight: 400;
   word-spacing: 1px;
   text-align: center;
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 .footing {
   background-color: #1d2025;
   color: #fff;
   box-sizing: border-box;
-  height: 250px;
+  min-height: 40vh;
   padding: 1% 3%;
+  width: 100vw;
 }
 
 .footer-content {
@@ -737,7 +763,7 @@ body {
   flex-direction: row;
   margin: 1rem 40px;
   box-sizing: border-box;
-  border-bottom: #393E46 solid 4px;
+  border-bottom: #393e46 solid 4px;
   justify-content: space-evenly;
 }
 
@@ -746,25 +772,20 @@ body {
   font-weight: bold;
   padding: 30px 10px;
   color: beige;
+  text-transform: capitalize;
 }
 
-.footing-menu{
+.footing-menu {
   margin: auto;
 }
 
-.footing-menu ol{
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  gap: 30px;
-  padding: 30px;
-}
-
-.footing-menu ol a {
+.footing-menu h1 {
+  padding: 2rem;
   color: inherit;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 /* penutup */
@@ -781,4 +802,525 @@ body {
   color: #fff;
   text-align: center;
   text-indent: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .kepala {
+    max-height: 120vh;
+    min-width: 50vw;
+    box-sizing: border-box;
+    background: linear-gradient(
+      450deg,
+      #6a3093 0%,
+      #a044ff 20%,
+      #e94057 45%,
+      #f27121 75%,
+      #fbb034 100%
+    );
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Navbar */
+  .Navigasi {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    position: relative;
+    top: 3%;
+    right: -20%;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .menu-toggle:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1d2025;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    margin: 3px 0;
+  }
+
+  .menu-toggle span:nth-child(1) {
+    transform-origin: center;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    transform-origin: center;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    transform-origin: center;
+  }
+
+  /* Hamburger animation when active */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(12px, 12px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, 0);
+  }
+
+  /* Fullscreen Menu Overlay */
+  .Navigasi .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140vw;
+    height: 140vh;
+    background: linear-gradient(360deg, transparent 10%, #fff 100%);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+    margin: auto;
+    overflow-y: auto;
+  }
+
+  .Navigasi .navbar .menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .Navigasi .navbar .menu li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .Navigasi .navbar .menu li a {
+    display: block;
+    padding: 3rem 1.8rem;
+    text-decoration: none;
+    color: dimgray;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: capitalize;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .Navigasi .navbar .menu li:first-child a {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .Navigasi .navbar .menu li a:hover {
+    background: rgba(30, 144, 255, 0.15);
+    color: #ed2100 !important;
+    text-shadow: 1px 1px 0 #fff !important;
+    text-decoration: none;
+  }
+
+  .Navigasi .navbar .menu li a.lapor {
+    color: #fd3db5;
+  }
+
+  .Navigasi .navbar .menu li a.lapor:hover {
+    color: dodgerblue;
+  }
+
+  /* frame pertama */
+
+  .content-pertama {
+    min-width: 140vw;
+    min-height: 140vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .conten-header {
+    min-width: 140vw;
+    min-height: 140vh;
+    position: relative;
+  }
+
+  .kadita {
+    transform: translate(80%, -103%);
+    min-height: 80vh;
+    min-width: 130vw;
+  }
+
+  .hero {
+    font-size: 16vmax;
+    transform: translate(-47%, -40%);
+    line-height: 8rem;
+    text-align: center;
+    letter-spacing: 1.2rem;
+  }
+
+  .pembungkus {
+    width: 90vw;
+    height: 30vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(30%, 175%);
+  }
+
+  .paragraph {
+    font-size: 17px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  .container {
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #212121;
+    margin: 0;
+    width: 140vw;
+    position: relative;
+    overflow: hidden;
+    min-height: 320vh;
+  }
+  /* Skin Create */
+
+  .create {
+    flex: 0 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+  }
+
+  .epic {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -5);
+  }
+
+  /* Skin MPL */
+
+  .turnament {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .mpl {
+    flex: 0 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    animation-delay: calc(30s / 8 * (8 - 1) * -4);
+  }
+
+  /* skin Starlight */
+
+  .star {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 0 0 auto;
+    animation-delay: calc(30s / 8 * (8 - 1) * -6);
+  }
+
+  .starlight {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* skin Epic */
+
+  .bajak-laut {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 0 0 auto;
+    animation-delay: calc(30s / 8 * (8 - 1) * -7);
+  }
+
+  .pirate {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Skin Spesial */
+
+  .special {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 0 0 auto;
+    animation-delay: calc(30s / 8 * (8 - 1) * -3);
+  }
+
+  .spesial {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  /* Skin Basic */
+
+  .basic {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 0 0 auto;
+    animation-delay: calc(30s / 8 * (8 - 1) * -2);
+  }
+
+  .normal {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Skin Bawaan */
+
+  .pabrik {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 0 0 auto;
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+
+  .default {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* galeri 2 */
+
+  .galeri {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto 2rem auto;
+    box-sizing: border-box;
+    /* border: 5px solid red; */
+  }
+
+  .infiniti {
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    animation: scrolling 30s linear infinite reverse;
+    padding-right: 1em;
+  }
+
+  .galeri:hover .infiniti {
+    animation-play-state: paused !important;
+    cursor: pointer;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 10px));
+    }
+  }
+
+  /* Fanart Create */
+
+  .artfan {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+
+  .fanart {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Fanart Starlight */
+
+  .art {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -2);
+  }
+
+  .gambar {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Fanart Sailor Moon */
+
+  .moon {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -3);
+  }
+
+  .sailor {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Starlight Skin */
+
+  .flower {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -4);
+  }
+
+  .bunga {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Old Anthem Of Tides */
+
+  .spear {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -5);
+  }
+
+  .tidal {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* New Anthem Of Tides */
+
+  .tombak {
+    flex: 0 0 auto;
+    margin: 20px 10px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    animation-delay: calc(30s / 8 * (8 - 1) * -6);
+  }
+
+  .stick {
+    min-width: 80vw;
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  /* Relasi section */
+  .Tim {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    gap: 5rem;
+    box-sizing: border-box;
+  }
+
+  .Rekan,
+  .Leader {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+
+  .rekanku,
+  .diriku {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .chara {
+    font-size: 20px;
+  }
+
+  .keterangan {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Footer */
+  .footing {
+    min-height: auto;
+    padding: 6% 5%;
+    min-width: 140vw;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 10px;
+    padding: 1rem 0;
+  }
+
+  .footing-judul {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .footing-menu h1 {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .terbit {
+    font-size: 18px;
+    text-indent: 0;
+    padding: 0 10px;
+  }
 }

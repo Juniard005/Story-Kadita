@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biograpy Kadita</title>
+    <title>Home</title>
     <link rel="stylesheet" href="Stylish.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header class="kepala">
-        <div class="Navigasi">
+        <div class="Navigasi" id="Navigasi">
             <div class="Nama-Hero">
-                <h1 class="title">Kadita Ayu Putri</h1>
+                <h1 class="title">kadita ayu putri</h1>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <nav class="navbar">
-                <ul class="menu">
-                    <li><a href="indeks.html">Home</a></li>
-                    <li><a href="biografi.html">Biografi</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="build.html">Build</a></li>
-                    <li><a href="skill.html">Skill</a></li>
-                    <li><a href="emblem.html">Emblem</a></li>
+                <ul class="menu" id="menu">
+                    <li><a href="indeks.html" class="lapor">home</a></li>
+                    <li><a href="Story/biography.html">biografi</a></li>
+                    <li><a href="Profil/profil.html">profile</a></li>
+                    <li><a href="Build/build.html">build</a></li>
+                    <li><a href="Skill/Skill.html" class="kompetensi">skill</a></li>
                 </ul>
             </nav>
         </div>
+    </header>
+    <div class="content-pertama">
         <section class="conten-header">
-            <h1 class="hero">Kadita</h1>
+            <h1 class="hero">kadita</h1>
             <div class="pembungkus">
                 <p class="paragraph">
                     Kadita Adalah Seorang Ratu Pantai Selatan Dari Provinsi Yogyakarta Dia Juga Seorang Mage Dengan Tipe Serangan Burst Damage
@@ -36,20 +43,20 @@
         <div class="object">
             <img src="Asset/Kawai-Kadita.png" alt="Object-Kadita" srcset="" class="kadita">
         </div>
-    </header>
+    </div>
     <div class="container">
         <main class="content">
             <section class="Content">
                 <div class="bungkusan">
-                    <h1 class="judul">Gallery</h1>
+                    <h1 class="judul">gallery</h1>
                 </div>
                 <div class="galery">
                     <div class="infinity">
                         <div class="pabrik">
-                            <img src="Image/Kadita-Ocean-Goddess.jpg" alt="default" srcset="" class="default">
+                            <img src="Image/Ocean_Goddess.png" alt="default" srcset="" class="default">
                         </div>
                         <div class="basic">
-                            <img src="Image/Kadita-Atlantean-Princess.jpg" alt="normal" srcset="" class="normal">
+                            <img src="Image/Kadita-Atlantean-Princess.png" alt="normal" srcset="" class="normal">
                         </div>
                         <div class="special">
                             <img src="Image/Kadita-White-Robin.jpg" alt="special" srcset="" class="spesial">
@@ -62,14 +69,17 @@
                         </div>
                         <div class="star">
                             <img src="Image/kadita-maiden-of-the-tide.jpg" alt="star" srcset="" class="starlight">
+                        </div>
+                        <div class="bajak-laut">
+                            <img src="Image/Kadita-Anthem-Of-Tide.png" alt="epic" srcset="" class="pirate">
                         </div>
                     </div>
                     <div class="infinity">
                         <div class="pabrik">
-                            <img src="Image/Kadita-Ocean-Goddess.jpg" alt="default" srcset="" class="default">
+                            <img src="Image/Ocean_Goddess.png" alt="default" srcset="" class="default">
                         </div>
                         <div class="basic">
-                            <img src="Image/Kadita-Atlantean-Princess.jpg" alt="normal" srcset="" class="normal">
+                            <img src="Image/Kadita-Atlantean-Princess.png" alt="normal" srcset="" class="normal">
                         </div>
                         <div class="special">
                             <img src="Image/Kadita-White-Robin.jpg" alt="special" srcset="" class="spesial">
@@ -82,14 +92,17 @@
                         </div>
                         <div class="star">
                             <img src="Image/kadita-maiden-of-the-tide.jpg" alt="star" srcset="" class="starlight">
+                        </div>
+                        <div class="bajak-laut">
+                            <img src="Image/Kadita-Anthem-Of-Tide.png" alt="epic" srcset="" class="pirate">
                         </div>
                     </div>
                     <div class="infinity">
                         <div class="pabrik">
-                            <img src="Image/Kadita-Ocean-Goddess.jpg" alt="default" srcset="" class="default">
+                            <img src="Image/Ocean_Goddess.png" alt="default" srcset="" class="default">
                         </div>
                         <div class="basic">
-                            <img src="Image/Kadita-Atlantean-Princess.jpg" alt="normal" srcset="" class="normal">
+                            <img src="Image/Kadita-Atlantean-Princess.png" alt="normal" srcset="" class="normal">
                         </div>
                         <div class="special">
                             <img src="Image/Kadita-White-Robin.jpg" alt="special" srcset="" class="spesial">
@@ -102,6 +115,9 @@
                         </div>
                         <div class="star">
                             <img src="Image/kadita-maiden-of-the-tide.jpg" alt="star" srcset="" class="starlight">
+                        </div>
+                        <div class="bajak-laut">
+                            <img src="Image/Kadita-Anthem-Of-Tide.png" alt="epic" srcset="" class="pirate">
                         </div>
                     </div>
                 </div>
@@ -111,19 +127,19 @@
                             <img src="Asset/fanart-Kadita-Create.jpeg" alt="fanart-create" srcset="" class="fanart">
                         </div>
                         <div class="art">
-                            <img src="Asset/Kadita-Skin-Lawas.jpg" alt="art-create" srcset="" class="gambar">
+                            <img src="Asset/Kadita-Pirate-Captain.jpg" alt="art-create" srcset="" class="gambar">
                         </div>
                         <div class="moon">
-                            <img src="Asset/Kadita_x_Sailor-Moon.jpg" alt="sailor-moon" srcset="" class="sailor">
+                            <img src="Asset/Sailor-Neptune.png" alt="sailor-moon" srcset="" class="sailor">
                         </div>
                         <div class="flower">
-                            <img src="Asset/Kadita-New-Skin.jpg" alt="funard-star" srcset="" class="bunga">
+                            <img src="Image/Kadita-New-Artwork.jpg" alt="funard-star" srcset="" class="bunga">
                         </div>
                         <div class="spear">
-                            <img src="Asset/Anthem-Of-Tides-Lawas.jpg" alt="seven-spear" srcset="" class="tidal">
+                            <img src="Asset/Gambit-Queen.png" alt="seven-spear" srcset="" class="tidal">
                         </div>
                         <div class="tombak">
-                            <img src="Asset/Anthem-Of-Tides-New.jpg" alt="new-spear" srcset="" class="stick">
+                            <img src="Asset/Katara.png" alt="new-spear" srcset="" class="stick">
                         </div>
                     </div>
                     <div class="infiniti">
@@ -131,19 +147,19 @@
                             <img src="Asset/fanart-Kadita-Create.jpeg" alt="fanart-create" srcset="" class="fanart">
                         </div>
                         <div class="art">
-                            <img src="Asset/Kadita-Skin-Lawas.jpg" alt="art-create" srcset="" class="gambar">
+                            <img src="Asset/Kadita-Pirate-Captain.jpg" alt="art-create" srcset="" class="gambar">
                         </div>
                         <div class="moon">
-                            <img src="Asset/Kadita_x_Sailor-Moon.jpg" alt="sailor-moon" srcset="" class="sailor">
+                            <img src="Asset/Sailor-Neptune.png" alt="sailor-moon" srcset="" class="sailor">
                         </div>
                         <div class="flower">
-                            <img src="Asset/Kadita-New-Skin.jpg" alt="funard-star" srcset="" class="bunga">
+                            <img src="Image/Kadita-New-Artwork.jpg" alt="funard-star" srcset="" class="bunga">
                         </div>
                         <div class="spear">
-                            <img src="Asset/Anthem-Of-Tides-Lawas.jpg" alt="seven-spear" srcset="" class="tidal">
+                            <img src="Asset/Gambit-Queen.png" alt="seven-spear" srcset="" class="tidal">
                         </div>
                         <div class="tombak">
-                            <img src="Asset/Anthem-Of-Tides-New.jpg" alt="new-spear" srcset="" class="stick">
+                            <img src="Asset/Katara.png" alt="new-spear" srcset="" class="stick">
                         </div>
                     </div>
                     <div class="infiniti">
@@ -151,19 +167,19 @@
                             <img src="Asset/fanart-Kadita-Create.jpeg" alt="fanart-create" srcset="" class="fanart">
                         </div>
                         <div class="art">
-                            <img src="Asset/Kadita-Skin-Lawas.jpg" alt="art-create" srcset="" class="gambar">
+                            <img src="Asset/Kadita-Pirate-Captain.jpg" alt="art-create" srcset="" class="gambar">
                         </div>
                         <div class="moon">
-                            <img src="Asset/Kadita_x_Sailor-Moon.jpg" alt="sailor-moon" srcset="" class="sailor">
+                            <img src="Asset/Sailor-Neptune.png" alt="sailor-moon" srcset="" class="sailor">
                         </div>
                         <div class="flower">
                             <img src="Asset/Kadita-New-Skin.jpg" alt="funard-star" srcset="" class="bunga">
                         </div>
                         <div class="spear">
-                            <img src="Asset/Anthem-Of-Tides-Lawas.jpg" alt="seven-spear" srcset="" class="tidal">
+                            <img src="Asset/Gambit-Queen.png" alt="seven-spear" srcset="" class="tidal">
                         </div>
                         <div class="tombak">
-                            <img src="Asset/Anthem-Of-Tides-New.jpg" alt="new-spear" srcset="" class="stick">
+                            <img src="Asset/Katara.png" alt="new-spear" srcset="" class="stick">
                         </div>
                     </div>
                 </div>
@@ -171,7 +187,7 @@
             <section class="relasi">
                 <div class="dibungkus">
                     <div class="network">
-                        <h1 class="networking">Relasi</h1>
+                        <h1 class="networking">relasi</h1>
                     </div>
                     <div class="Tim">
                         <div class="Rekan">
@@ -204,22 +220,17 @@
     <footer class="footing">
         <div class="footer-content">
             <div class="footing-judul">
-                <h1>Kadita Ayu Putri</h1>
+                <h1>kadita ayu putri</h1>
             </div>
             <div class="footing-menu">
-                <ol>
-                    <li><a href="indeks.html">Home</a></li>
-                    <li><a href="biografi.html">Biografi</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="build.html">Build</a></li>
-                    <li><a href="skill.html">Skill</a></li>
-                    <li><a href="emblem.html">Emblem</a></li>
-                </ol>
+                <h1>Informasi ini dibuat untuk tujuan edukasi pemain.</h1>
             </div>
         </div>
         <div class="lisensi">
-            <p class="terbit">© 2025 | Created by Kadita Ayu Putri. All rights reserved.</p>
+            <p class="terbit">&#169; 2025 | Created by Kadita Ayu Putri. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

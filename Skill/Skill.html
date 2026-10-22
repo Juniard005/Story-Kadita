@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link rel="stylesheet" href="Stylesh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="kepala">
+        <div class="Navigasi" id="Navigasi">
+            <div class="Nama-Hero">
+                <h1 class="name">kadita ayu putri</h1>
+            </div>
+            <div class="menu-toogle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <ul class="menu" id="menu">
+                    <li><a href="../indeks.html">home</a></li>
+                    <li><a href="../Story/biography.html">biografi</a></li>
+                    <li><a href="../Profil/profil.html">profile</a></li>
+                    <li><a href="../Build/build.html">build</a></li>
+                    <li><a href="Skill.html" class="kompetensi">skill</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="sidebar">
+            <div class="layout">
+                <div class="gambar">
+                    <img src="../Asset/Bucin-Kadita.jpeg" alt="Kadita Skill" class="kadita">
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stats-grid">
+                        <div class="stat-title">
+                            <i class="fas fa-chart-bar"></i>
+                            <h2 class="stat-label">hero difficulty & role</h2>
+                        </div>
+                        <div class="stat-card">
+                            <div class="difficulty-box">
+                                <h2>medium difficulty</h2>
+                                <p><i class="fas fa-user"></i> role: mage</p>
+                                <p><i class="fas fa-star"></i> specialty: burst/charge</p>
+                                <p><i class="fas fa-map-marker-alt"></i> lane: mid</p>
+                            </div>
+                            <div class="kotak-prioritas">
+                                <h3><i class="fas fa-sort-amount-up"></i> skill priority</h3>
+                                <p>Upgrade Skill 1 di Level 1 dan prioritaskan untuk meningkatkan Skill 1 dengan Skill 2 sebagai cadangan. Tingkatkan Ultimate kapan pun tersedia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="Content">
+            <div class="pembungkus">
+                <h1 class="judul">Skill Kadita</h1>
+            </div>
+            <div class="skill">
+                <h3 class="ability">Ability 1: Ocean Oddity</h3>
+                <p class="deskripsi">
+                    Kadita mengeluarkan gelombang energi laut yang memberikan damage magic kepada musuh di sekitarnya.
+                    Setiap kali musuh terkena ability ini, mereka akan mendapatkan efek slow yang mengurangi kecepatan
+                    gerakannya selama beberapa detik.
+                </p>
+
+                <h3 class="ability">Ability 2: Fountain Spray</h3>
+                <p class="deskripsi">
+                    Kadita memanggil kekuatan ombak untuk menyerang area tertentu, memberikan damage magic kepada
+                    musuh yang berada di dalamnya. Musuh yang terkena ability ini akan mendapatkan efek silence,
+                    mencegah mereka menggunakan skill aktif selama beberapa detik.
+                </p>
+
+                <h3 class="ability">Ultimate: Rough Waves</h3>
+                <p class="deskripsi">
+                    Kadita memanggil gelombang besar yang melanda area luas, memberikan damage magic yang besar kepada
+                    semua musuh di dalamnya. Musuh yang terkena ultimate ini akan mendapatkan efek stun, membuat mereka
+                    tidak bisa bergerak atau menyerang selama beberapa detik.
+                </p>
+            </div>
+        </section> -->
+
+        <section class="Content">
+            <div class="header">
+                <div class="header-content">
+                    <h1><i class="fas fa-crown"></i> Kadita - Ocean Goddess</h1>
+                    <p>Mage Specialist with Burst/Charge Ability | Mid Lane</p>
+                </div>
+            </div>
+
+            <div class="tab-container">
+                <nav class="tab-nav">
+                    <button class="tab-button" data-tab="pasif">
+                        <img src="../Asset/Thalasshopobia.png" alt="button-gambar" class="button-pasive">
+                    </button>
+                    <button class="tab-button active" data-tab="skill1">
+                        <img src="../Asset/Tidal-Ode.png" alt="button-gambar" class="button">
+                    </button>
+                    <button class="tab-button" data-tab="skill2">
+                        <img src="../Asset/Tidal-Fountain.png" alt="button-gambar" class="button">
+                    </button>
+                    <button class="tab-button" data-tab="ultimate">
+                        <img src="../Asset/Rough-Waves.png" alt="button-gambar" class="button">
+                    </button>
+                </nav>
+
+                <div class="tab-content">
+                    <div id="skill1" class="tab-pane active">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <img src="../Asset/Tidal-Ode.png" alt="skill1-icon" class="skill1-icon">
+                                </div>
+                                <div>
+                                    <h3 class="skill-title">Tidal Ode <span class="skill-type">Blink</span> <span class="skill-type">Area Efek</span></h3>
+                                </div>
+                            </div>
+                            <div class="skill-description">
+                                <p>
+                                    Kadita memanggil gelombang laut untuk membawanya ke arah target dan kembali memberikan 250 (+90% Total Magic Power) 
+                                    Magic Damage ke Lawan yang terkena dan menyebabkan 30% Slow ke mereka Saat di dalam gelombang dia menjadi kebal terhadap
+                                    Crown Control dan mendapatkan 50% Pengurangan Damage. Skill ini dapat menembus rintangan dan medan.
+                                </p>
+                                <p class="noted">Gunakan Lagi: Kadita keluar dari gelombang tanpa mengganggu pergerakan gelombang.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skill2" class="tab-pane">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <img src="../Asset/Tidal-Fountain.png" alt="skill2-icon" class="skill2-icon">
+                                </div>
+                                <div>
+                                    <h3 class="skill-title">Tidal Fountain <span class="skill-type">AOE</span> <span class="skill-type">CC</span></h3>
+                                </div>
+                            </div>
+                            <div class="skill-description">
+                                <p>
+                                    Kadita memanggil gelombang laut untuk membawanya ke arah target dan kembali memberikan 350 (+140% Total Magic Power)
+                                    Magic Damage ke Lawan yang terkena dan menyebabkan airbone selama 1 detik.
+                                </p>
+                                <p class="noted">Kadita dapat menggunakan Skill ini Ocean Ode untuk memanggil ombak dengan jeda semburan yang lebih singkat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ultimate" class="tab-pane">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <img src="../Asset/Rough-Waves.png" alt="ultimate-icon" class="ultimate-icon">
+                                </div>
+                                <div>
+                                    <h3 class="skill-title">Rough Waves <span class="skill-type">Burst Damage</span> <span class="skill-type">Invincible</span></h3>
+                                </div>
+                            </div>
+                            <div class="skill-description">
+                                <p>
+                                    Kadita menyelam dan mengeluarkan ombak ke semua arah (skill ini hanya dapat dibatalin oleh Suppression), 
+                                    masing-masing memberikan 270 (+60% Total Magic Power) Magic Damage dan menyebabkan 30% slow ke lawan.
+                                    Lawan Yang terkena beberapa ombak akan menerima damage tambahan. Setelah Jeda Singkat, ombak akan kembali ke Kadita,
+                                    setiap ombak memberikan 180 (+40% Total Magic Power) Magic Damage ke lawan yang terkena.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pasif" class="tab-pane">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <img src="../Asset/Thalasshopobia.png" alt="pasif-icon" class="pasif-icon">
+                                </div>
+                                <div>
+                                    <h3 class="skill-title">Thalassophobia <span class="skill-pasif">Heal</span></h3>
+                                </div>
+                            </div>
+                            <div class="skill-description">
+                                <p>
+                                    kadita memperoleh blessing of the ocean setiap 30 detik. blessing of the ocean ketika dia menerima damage dari hero lawan</p>
+                                <p>dan berlangsung selama 4 detik membuatnya dapat memulihkan 65% dari HP yang hilang selama durasi tersebut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footing">
+        <div class="footer-content">
+            <div class="footing-judul">
+                <h1>kadita ayu putri</h1>
+            </div>
+            <div class="footing-menu">
+                <h1>Informasi ini dibuat untuk tujuan edukasi pemain.</h1>
+            </div>
+        </div>
+        <div class="lisensi">
+            <p class="terbit">&#169; 2025 | Created by Kadita Ayu Putri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="kompetensi.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and panes
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding tab content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
